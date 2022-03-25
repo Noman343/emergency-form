@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Contact Form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+  <body>
+
+      <H1 >Emergency Contact Form</H1>
+       <form>
+      <label for="name"> First_Name</label>
+      <input id="info" type="text" placeholder="Name">
+      <br>
+      <label for="name"> Father_Name</label>
+      <input type="text" placeholder="Father_Name">
+      <br>
+
+
+      <label for="female">Female</label>
+      <input id="female" type="radio" name="Gender">
+
+      <label for="male">Male</label>
+      <input id="male" type="radio" name="Gender">
+      <br>
+
+
+      <label for="contact">Contact_No</label>
+      <input  id="Contact " type="number" value="03" >
+      <br>
+
+      <label for="Alternative_contact">Alternative_Contact_Number</label>
+      <input id="Alternative_Contact" type="number" value="03" >
+      <br>
+
+      <label for="Address">Address</label>
+      <input id="Address " type="text"/>
+      <br>
+
+      <label for="Alternative_Address">Alternative_Address</label>
+      <input id="Alternative_Address" type="text"/>
+      <br>  
+
+      <label for="E-Mail">Email</label>
+      <input id="E-Mail "  type="text" placeholder="gmail.com">
+      <br>   
+
+      <h3>Realation Status</h3>
+      <label for="Single">Single</label>
+      <input id="single" type="radio" name="status"> 
+      <br>
+
+       <label for="Married">Married</label>
+       <input id="Married" type="radio" name="status">
+       <br>
+
+       <label for="divorced">Divorced</label>
+       <input id="divorced" type="radio" name="status">
+       <br>
+
+       <h3>Any Medical Impairment</h3>
+       <label for="Yes">Yes</label>
+       <input id="Yes" type="radio" name="Medical_impairment">
+       <br>
+
+       <label for="No">No</label>
+       <input id="No" type="radio" name="Medical_impairment">
+       <br>
+
+       <h3>Next Of Kin</h3>
+       <label for="Full_Name">Full_Name</label>
+       <input id="Full_Name " placeholder="Name">
+       <br>
+
+       <label for="Address">Address</label>
+       <input id="Address " placeholder="Address">
+       <br>
+
+       <label for="E-Mail">E-Mail</label>
+       <input id="E-Mail " placeholder="gmail.com">
+       <br>
+
+       <label for="Contact_Number">Contact_No</label>
+       <input id="Contact_Number " value="03">
+       <br>
+       <input onclick="func()" id="button" type="submit">
+    </form> 
+         
+   
+
+ 
+<script>
+    function func(){
+        if (document.getElementById("info").value == "") {
+            alert("Please Provide The Value")
+        } else{
+            alert("Form Submitted")
+        }
+    }
+</script>
+</body>
+</html>
